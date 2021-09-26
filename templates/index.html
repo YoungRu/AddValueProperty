@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AddValue</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    /* background-color: rgb(2, 38, 105); */
+    height: 7.5rem;
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    z-index: 2;
+}
+body{
+    background: url('media/body.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#logohead{
+    background: url('media/logoonly.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: static;
+    /* width: 30vmax; */
+    max-height: min-content;
+    height: 7.5rem;
+    width: 30rem;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    float: right;
+    font-size: 1.5vmax;
+    height: min-content;
+}
+li{
+    display: inline;
+    text-decoration:none;
+    padding: 0 1rem 1rem 1rem;
+    font-size: 110%;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 5rem;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+div.col-md-12 col-lg-4 img{
+    border:solid 5px black;
+}
+div.col-md-12 col-lg-4 img{
+    border:solid 5px black;
+}
+.heading{
+color:rgb(2, 38, 105);
+}
+#GGS{
+    flex-flow: row wrap;
+}
+h4.rgb{
+    max-width: 100%;
+    display: inline-block;
+    background:rgb(139, 65, 4);
+    color: white;
+}
+h4.black{
+    background-color:black;
+    color:white;
+    display: inline-block;
+}
+h5#white{
+    color:white;
+    font-size: 90%;
+}
+.buildingimage{
+    max-height: 50vh;
+    height: 50vh;
+    background-image: url("media/condominium.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#wmp{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    color: rgb(4, 4, 94);
+    background-color: white;
+    font-size: 3vmax;
+    font-family:sans-serif;
+}
+
+ol{
+    display: flex;
+    justify-content: space-between;
+    height: min-content;
+}
+div#blue{
+    background-color:rgb(2, 38, 105);
+    padding: 40px 0 40px 0;
+}
+@media (max-width:428px){
+    #header{
+        /* background-color: rgb(2, 38, 105); */
+        height: 7.5rem;
+        width: 100vw;
+        max-height: min-content;
+        max-width: 100vw;
+        /* position: fixed; */
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+            z-index: 2;}
+    ul{
+            display: flex;
+            justify-content: center;
+            float: right;
+            margin-top: 0rem;
+            font-size: 1.5vmax;
+        }
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            display: inline;
+            text-decoration:none;
+            padding: 0 1rem 1rem 1rem;
+            font-size: 110%;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 0rem;
+        }
+
+}
+@media (min-width:429px) and (max-width:1050px){
+    #header{
+        /* background-color: rgb(2, 38, 105); */
+        height: 7.5rem;
+        width: 100vw;
+        max-height: min-content;
+        max-width: 100vw;
+        /* position: fixed; */
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+            z-index: 2;}
+    ul{
+            display: flex;
+            justify-content: center;
+            float: right;
+            margin-top: 0rem;
+            font-size: 1.5vmax;
+        }
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            display: inline;
+            text-decoration:none;
+            padding: 0 1rem 1rem 1rem;
+            font-size: 110%;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 0rem;
+        }
+        #break{
+            height: 2vmax;
+            color: rgb(2, 2, 73);
+            position:relative;
+            z-index: 2;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            flex-flow: wrap-reverse;
+            background-color:rgb(2, 38, 105);
+            bottom: 0;
+            top: -10%;
+            height: 9.5rem;
+            align-items: center;
+            text-align: center;
+        }
+        .contactmail{
+            height: min-content;
+            display: inline-block;
+            margin-right: 1rem;
+            width: 50%;
+            /* text-align:right ; */
+        }
+        .mail{
+            text-align: right;
+            color: white;
+            font-family: sans-serif;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .mail2{
+            text-align: right;
+            color: white;
+            font-family: sans-serif;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .mail3{
+            text-align: right;
+            color: white;
+            font-family: sans-serif;
+            position: relative;
+            margin-bottom: 0;
+        }
+        #logo2{
+            display: inline-block;
+            position:relative;
+            /* bottom: 1rem; */
+            height: min-content;
+            visibility: hidden;
+            width: 33.3vmax;
+        }
+        iframe{
+            position: relative;
+            height: min-content;
+            width: 33.3vmax;
+        }
+}
+
+
+</style>
+<body>
+    <div id="header">
+        <div id="logohead"></div>
+        <!-- <img src="./addvalue logo only logo.PNG"  width="500vw" height="100%" alt="logo"> -->
+        <ul class="header">
+            <li> <a href="#aboutus" class="link" >ABOUT US</a> </li>
+            <li><a href="#managementteam" class="link" >MANAGEMENT TEAM</a> </li>
+            <li><a href="#blue" class="link" >CONTACT</a> </li>
+            <li><a href="#notablepartners" class="link" >NOTABLE PROJECTS</a> </li>
+        </ul>
+    </div>
+    <br><br>
+    <!-- <div id="break"> <h6>        Mr.Ung +6012-4837773 admin@addvalueproperty.my</h6></div> -->
+    <div class="buildingimage">
+        <h3 id="wmp">WE MANAGE PROPERTY</h3>
+    </div>
+<br><br>
+<div class="text-right">
+    <h4 class="black" id="aboutus">ABOUT US</h4>
+</div>
+    <span class="buildingimage2">
+        <h3 id="om" class="text-center">OUR MISSION Service Excellence, Added Value</h3>
+    </span>
+    <div id="thecompany" class="text-center">
+        <h3 class="heading"><strong>The Company</strong></h3>
+        <br>
+        <br>
+        <h6 class="profile">We are registered Property Manager under the Valuers, Appraisals, Estate Agents and Property Management Act 1981.</h6>
+        <br>
+        <h6 class="profile">Established in the year 2011, we have been providing Building and Facilities Management Service for Gated & Guarded Community, High Rise Building and Commercial Property.</h6>
+        <br>
+        <h6 class="profile">Our top management team consists of professionals in the field of Finance, Human Capital Management and Facilities Management with hands on experience in managing Buildings governed under Strata Management.</h6>
+        <br>
+        <h6 class="profile">Since our expertise is diverse and varied, we are able to map our strategies for the Property as an investment as well as enhancing its prestige and value.</h6>
+        <br>
+        <h6 class="profile">We are capable of managing a wide spectrum of Property & Facilities Mnagement, encompassing Building Maintenance, Finance, Rules & Regulation and Human Relations effectively.</h6>
+        <br>
+        <h6 class="profile">We are well verse and always keep abreast on the latest development on Strata Management and any new legislation that may be introduced from time to time, to manage efficiently the legal aspect of Property Management.</h6>
+        <br>
+        <h3 class="heading"> <strong> CSR </strong></h3>
+        <h3 id="oms">(Corporate Social Responsibilities of Addvalue)</h3>
+        <h6 class="profile">1. Providing equal job opportunities for retirees tapping into their experiences & sustaining thier livelihood.</h6>
+        <br>
+        <h6 class="profile">2. Creating a positive and friendly work culture, resolving issues through consensus and mutual discussion. Emphasizing on Team work.</h6>
+        <br>
+        <h6 class="profile">3. Fostering green environment and put in place procedures to minimize wastage and waste segregation for recycling.</h6>
+        <br>
+        <h6 class="profile">4. Economic social initiative by improving Company's operation through innovation and participate in sustainable practices.</h6>
+        </div>
+<br><br>
+<div class="text-right">
+    <h4 class="black">OUR SERVICE</h4>
+</div>
+
+<div class="row">
+  {% for srv in SRS %}
+  <div class="col-xs-6 col-sm-3 text-center" ><img src="{{ srv.Image.url }}" alt="{{srv.Image}}" width="80%" height="100%"></div>
+  {% endfor %}
+</div>
+    <br><br>
+<div class="text-right">
+    <h4 class="black" id="managementteam">MANAGEMENT TEAM</h4>
+</div>
+    <br>
+
+    {% for staff in Staffs %}
+<div class="text-center">
+    <h4>{{staff.Name}}</h4>
+    <h4>{{staff.Position}}</h4>
+    <h5>+{{staff.Phone}}</h5>
+    <h6>{{staff.Description}}</h6>
+</div>
+<br><br>
+    {% endfor %}
+<div class="text-right">
+    <h4 class="black" id="notablepartners">SOME NOTABLE PROJECTS</h4>
+</div>
+<div class="text-right">
+    <h4 class="black">WITH VARIED AREAS OF MANAGEMENT</h4>
+</div>
+<div class="text-end">
+    <h4 class="rgb">GATED & GUARDED COMMUNITY</h4>
+</div>
+<div class="container">
+    <div class="row" id="GGS">
+        {% for gg in GGS %}
+      <div class="col-md-12 col-lg-4 text-center"><img src="{{ gg.Image.url }}" alt="{{gg.Image}}" width="80%" height="85%"></div>
+      {% endfor %}
+    </div>
+</div>
+ <div class="text-end">
+    <h4 class="rgb">HIGH RISE BUILDING</h4>
+</div>
+<div class="container">
+    <div class="row">
+      {% for hr in HRS %}
+      <div class="col-md-12 col-lg-4 text-center" ><img src="{{ hr.Image.url }}" alt="{{hr.Image}}" width="80%" height="85%"></div>
+      {% endfor %}
+    </div>
+</div>
+ <div class="text-end">
+    <h4 class="rgb">COMPLEX</h4>
+</div>
+<div class="container">
+    <div class="row">
+      {% for cp in CPS %}
+      <div class="col-md-12 col-lg-4 text-center" ><img src="{{ cp.Image.url }}" alt="{{cp.Image}}" width="80%" height="80%"></div>
+       {% endfor %}
+    </div>
+</div>
+    <h5>and alot more...</h5>
+    <div class="row" id="blue" >
+      <div class="col-md-12 col-lg-4 text-center" ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24389561.09193744!2d90.58229668958673!3d-9.610643500136867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac520a81bf6ad%3A0x939bcfd604ccc768!2sAddvalue%20Advisory%20Sdn.%20Bhd.!5e0!3m2!1sen!2smy!4v1626105171305!5m2!1sen!2smy" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+      <div class="col-md-12 col-lg-4 text-center" id="contact">
+          {% for staff in Staffs %}
+          <h5 id="white">{{ staff.Email }}</h5>
+          {% endfor %}
+      </div>
+      <div class="col-md-12 col-lg-4 text-center"> <img src="media/addvalue master copy without address.png"  width="30%" > </div>
+    </div>
+</body>
+</html>
