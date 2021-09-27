@@ -7,6 +7,10 @@
     {% load static %}
     <meta charset="UTF-8">
     <link rel="icon" href="{% static 'logo.png' %}" type="image/x-icon">
+    <meta name="description" content="We are registered Property Manager under the Valuers, Appraisals, Estate Agents and Property Management Act 1981 based at Butterworth, Penang, Malaysia.Established in the year 2011, we have been providing Building and Facilities Management Service for Gated & Guarded Community, High Rise Building and Commercial Property.">
+    <meta name="google-site-verification" content="QGyZ-RUSNoUDcNzjuH6qM194hJUbAl0EqQRAfDclzts" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Property, property, PROPERTY, MANAGEMENT, Management, management, inderawasih, Inderawasih, INDERAWASIH, condomaster, condo-master, CondoMaster, Condomaster, condominium, Condominium, Commitee, comittee, pengerusan strata, Strata, strata title, ACT, starta">
+    <meta name="author" content="Young Loo">
     <title>AddValue Property Management</title>
 </head>
 <style>
@@ -310,9 +314,9 @@ div#blue{
 </div>
 
 <div class="row">
-  {% for srv in SRS %}
-  <div class="col-xs-6 col-sm-3 text-center" ><img src="{{ srv.Image.url }}" alt="{{srv.Image}}" width="80%" height="100%"></div>
-  {% endfor %}
+    {% for srv in SRS %}
+        <div class="col-xs-6 col-sm-3 text-center" ><img src="{{ srv.Image.url }}" alt="{{srv.Image}}" width="80%" height="100%"></div>
+    {% endfor %}
 </div>
     <br><br>
 <div class="text-right">
@@ -321,12 +325,12 @@ div#blue{
     <br>
 
     {% for staff in Staffs %}
-<div class="text-center">
-    <h4>{{staff.Name}}</h4>
-    <h4>{{staff.Position}}</h4>
-    <h5>+{{staff.Phone}}</h5>
-    <h6>{{staff.Description}}</h6>
-</div>
+        <div class="text-center">
+            <h4>{{staff.Name}}</h4>
+            <h4>{{staff.Position}}</h4>
+            <h5>+{{staff.Phone}}</h5>
+            <h6>{{staff.Description}}</h6>
+        </div>
 <br><br>
     {% endfor %}
 <div class="text-right">
