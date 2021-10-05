@@ -282,7 +282,7 @@ div#blue{
     <span class="buildingimage2">
         <h3 id="om" class="text-center">OUR MISSION Service Excellence, Added Value</h3>
     </span>
-    <div id="thecompany" class="text-center">
+    <div id="thecompany" class="container text-center">
         <h3 class="heading"><strong>The Company</strong></h3>
         <br>
         <br>
@@ -329,7 +329,7 @@ div#blue{
     <br>
 
     {% for staff in Staffs %}
-        <div class="text-center">
+        <div class="container text-center">
             <h4>{{staff.Name}}</h4>
             <h4>{{staff.Position}}</h4>
             <h5>+60{{staff.Phone}}</h5>
@@ -375,8 +375,6 @@ div#blue{
 <div class="container">
     <div class="row">
         <div class="col-md-12 col-lg-4 text-center" ><img src="media/complexsempilai.jpg" alt="{{cp.Image}}" width="80%" height="80%"></div>
-        <div class="col-md-12 col-lg-4 text-center" ><img src="media/coming_soon.jpg" alt="{{cp.Image}}" width="80%" height="80%"></div>
-        <div class="col-md-12 col-lg-4 text-center" ><img src="media/coming_soon.jpg" alt="{{cp.Image}}" width="80%" height="80%"></div>
 <!--      {% for cp in CPS %}-->
 <!--      <div class="col-md-12 col-lg-4 text-center" ><img src="{{ cp.Image.url }}" alt="{{cp.Image}}" width="80%" height="80%"></div>-->
 <!--       {% endfor %}-->
