@@ -314,13 +314,13 @@ div#blue{
 </div>
 
 <div class="row">
-    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/facilitym.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>
-    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/financialm.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>
-    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/hrm.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>
-    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/lam.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>
-<!--    {% for srv in SRS %}-->
-<!--        <div class="col-xs-6 col-sm-3 text-center" ><img src="{{ srv.Image.url }}" alt="{{srv.Image}}" width="80%" height="100%"></div>-->
-<!--    {% endfor %}-->
+<!--    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/facilitym.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>-->
+<!--    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/financialm.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>-->
+<!--    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/hrm.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>-->
+<!--    <div class="col-xs-6 col-sm-3 text-center" ><img src="media/lam.PNG" alt="{{srv.Image}}" width="80%" height="100%"></div>-->
+    {% for srv in SRS %}
+        <div class="col-xs-6 col-sm-3 text-center" ><img src="{{ srv.Image.url }}" alt="{{srv.Image}}" width="80%" height="100%"></div>
+    {% endfor %}
 </div>
     <br><br>
 <div class="text-right">
