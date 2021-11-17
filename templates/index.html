@@ -348,12 +348,12 @@ div#blue{
 </div>
 <div class="container">
     <div class="row" id="GGS">
-         <div class="col-md-12 col-lg-4 text-center"><img src="media/villa_preimero.jpg" alt="{{gg.Image}}" width="80%" height="85%"></div>
-         <div class="col-md-12 col-lg-4 text-center"><img src="media/maple_residence.jpg" alt="{{gg.Image}}" width="80%" height="85%"></div>
-         <div class="col-md-12 col-lg-4 text-center"><img src="media/emerald_heights.jpg" alt="{{gg.Image}}" width="80%" height="85%"></div>
-<!--        {% for gg in GGS %}-->
-<!--      <div class="col-md-12 col-lg-4 text-center"><img src="{{ gg.Image.url }}" alt="{{gg.Image}}" width="80%" height="85%"></div>-->
-<!--      {% endfor %}-->
+<!--         <div class="col-md-12 col-lg-4 text-center"><img src="media/villa_preimero.jpg" alt="{{gg.Image}}" width="80%" height="85%"></div>-->
+<!--         <div class="col-md-12 col-lg-4 text-center"><img src="media/maple_residence.jpg" alt="{{gg.Image}}" width="80%" height="85%"></div>-->
+<!--         <div class="col-md-12 col-lg-4 text-center"><img src="media/emerald_heights.jpg" alt="{{gg.Image}}" width="80%" height="85%"></div>-->
+        {% for gg in GGS %}
+      <div class="col-md-12 col-lg-4 text-center"><img src="{{ gg.Image.url }}" alt="{{gg.Image}}" width="80%" height="85%"></div>
+      {% endfor %}
     </div>
 </div>
  <div class="text-end">
@@ -361,12 +361,12 @@ div#blue{
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-12 col-lg-4 text-center" ><img src="media/Capri-Park.jpg" alt="{{hr.Image}}" width="80%" height="85%"></div>
-        <div class="col-md-12 col-lg-4 text-center" ><img src="media/orange_3.jpg" alt="{{hr.Image}}" width="80%" height="85%"></div>
-        <div class="col-md-12 col-lg-4 text-center" ><img src="media/telaga_emas.jpg" alt="{{hr.Image}}" width="80%" height="85%"></div>
-<!--      {% for hr in HRS %}-->
-<!--      <div class="col-md-12 col-lg-4 text-center" ><img src="{{ hr.Image.url }}" alt="{{hr.Image}}" width="80%" height="85%"></div>-->
-<!--      {% endfor %}-->
+<!--        <div class="col-md-12 col-lg-4 text-center" ><img src="media/Capri-Park.jpg" alt="{{hr.Image}}" width="80%" height="85%"></div>-->
+<!--        <div class="col-md-12 col-lg-4 text-center" ><img src="media/orange_3.jpg" alt="{{hr.Image}}" width="80%" height="85%"></div>-->
+<!--        <div class="col-md-12 col-lg-4 text-center" ><img src="media/telaga_emas.jpg" alt="{{hr.Image}}" width="80%" height="85%"></div>-->
+      {% for hr in HRS %}
+      <div class="col-md-12 col-lg-4 text-center" ><img src="{{ hr.Image.url }}" alt="{{hr.Image}}" width="80%" height="85%"></div>
+      {% endfor %}
     </div>
 </div>
  <div class="text-end">
@@ -374,10 +374,10 @@ div#blue{
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-12 col-lg-4 text-center" ><img src="media/complexsempilai.jpg" alt="{{cp.Image}}" width="80%" height="80%"></div>
-<!--      {% for cp in CPS %}-->
-<!--      <div class="col-md-12 col-lg-4 text-center" ><img src="{{ cp.Image.url }}" alt="{{cp.Image}}" width="80%" height="80%"></div>-->
-<!--       {% endfor %}-->
+<!--        <div class="col-md-12 col-lg-4 text-center" ><img src="media/complexsempilai.jpg" alt="{{cp.Image}}" width="80%" height="80%"></div>-->
+      {% for cp in CPS %}
+      <div class="col-md-12 col-lg-4 text-center" ><img src="{{ cp.Image.url }}" alt="{{cp.Image}}" width="80%" height="80%"></div>
+       {% endfor %}
     </div>
 </div>
     <h5>and alot more...</h5>
