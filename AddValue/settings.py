@@ -133,8 +133,15 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_ACCESS_KEY_ID = 'AKIAZW2K3S7OGX6WULEN'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'addvaluepublicbucket'
+AWS_QUERYSTRING_AUTH = False
